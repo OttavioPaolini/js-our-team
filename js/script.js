@@ -17,3 +17,67 @@
 // Trasformare la stringa foto in una immagine effettiva
 // BONUS 2:
 // Organizzare i singoli membri in card/schede. Se non vi sentite particolarmente creativi, potete prendere uno spunto dallo screenshot allegato.
+
+
+const teamArray = [
+    {
+        name: "Wayne",
+        lastName:"Barnett",
+        role: "Founder & CEO",
+        img: "wayne-barnett-founder-ceo.jpg"
+    },
+    {
+        name: "Angela",
+        lastName:"Caroll",
+        role: "Chief Editor",
+        img: "angela-caroll-chief-editor.jpg"
+    },
+    {
+        name: "Walter",
+        lastName:"Gordon",
+        role: "Office Manager",
+        img: "walter-gordon-office-manager.jpg"
+    },
+    {
+        name: "Angela",
+        lastName:"Lopez",
+        role: "Social Media Manager",
+        img: "angela-lopez-social-media-manager.jpg"
+    },
+    {
+        name: "Scott",
+        lastName:"Estrada",
+        role: "Developer",
+        img: "scott-estrada-developer.jpg"
+    },
+    {
+        name: "Barbara",
+        lastName:"Ramos",
+        role: "Graphic Designer",
+        img: "barbara-ramos-graphic-designer.jpg"
+    }
+]
+console.log(teamArray);
+
+const teamRow = document.querySelector(".row");
+
+
+for (let i = 0; i < teamArray.length; i++) {
+    const currentTeam = teamArray[i];
+    teamRow.innerHTML += `
+            <div class="col">
+                <div class="card">
+                <img src="img/${currentTeam.img}" alt="">
+                <h2>${currentTeam.name} ${currentTeam.lastName}</h2>
+                <p>${currentTeam.role}</p>
+
+                </div>
+            </div>
+    `;
+}
+
+
+// {/* <div class="card">
+//             <h2>${currentStudent.nome} ${currentStudent.cognome}</h2>
+//             <p>Voto: ${currentStudent.votoMedio}</p>
+//         </div> */}

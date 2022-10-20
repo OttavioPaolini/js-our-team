@@ -8,6 +8,9 @@ html{
     font-family: sans-serif;
     background-color: #F5F5F1;
 }
+img{
+    width: 100%;
+}
 /* HEADER */
 header .container{
     width: 45%;
@@ -38,8 +41,12 @@ header p{
 }
 
 .card{
-    border: 1px solid black;
-    height: 300px;
-    background-color: aquamarine;
+    background-color: white;
     margin-bottom: 40px;
+}
+.card h2{
+    padding-top:1em;
+}
+.card p{
+    padding-bottom: 1.5em;
 }

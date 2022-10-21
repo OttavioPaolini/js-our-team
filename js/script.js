@@ -67,7 +67,7 @@ for (let i = 0; i < teamArray.length; i++) {
     teamRow.innerHTML += `
             <div class="col">
                 <div class="card">
-                <img src="img/${currentTeam.img}" alt="">
+                <img src="img/${currentTeam.img}" alt="${currentTeam.name}">
                 <h2>${currentTeam.name} ${currentTeam.lastName}</h2>
                 <p>${currentTeam.role}</p>
 

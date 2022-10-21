@@ -57,23 +57,23 @@ const teamArray = [
         img: "barbara-ramos-graphic-designer.jpg"
     }
 ]
-console.log(teamArray);
 
 const teamRow = document.querySelector(".row");
 
-
+let teamMembers = "";
 for (let i = 0; i < teamArray.length; i++) {
     const currentTeam = teamArray[i];
-    teamRow.innerHTML += `
+    teamMembers += `
             <div class="col">
                 <div class="card">
-                <img src="img/${currentTeam.img}" alt="${currentTeam.name}">
-                <h2>${currentTeam.name} ${currentTeam.lastName}</h2>
-                <p>${currentTeam.role}</p>
-
+                    <img src="img/${currentTeam.img}" alt="${currentTeam.name}">
+                    <h2>${currentTeam.name} ${currentTeam.lastName}</h2>
+                    <p>${currentTeam.role}</p>
                 </div>
             </div>
     `;
+    console.log(teamMembers);
+    teamRow.innerHTML = teamMembers
 }
 
 
